@@ -2,14 +2,6 @@ import { useState, useEffect, useRef } from "react";
 import { motion, useInView, useScroll, useTransform, AnimatePresence } from "motion/react";
 import { ArrowLeft, ArrowUpRight, Calendar, Clock, Mail, Menu, User, X } from "lucide-react";
 
-const assetPath = (path: string) => {
-  if (/^(https?:)?\/\//.test(path) || path.startsWith("data:")) {
-    return path;
-  }
-
-  return `${import.meta.env.BASE_URL}${path.replace(/^\/+/, "")}`;
-};
-
 const projects = [
   {
     id: "01",
@@ -19,16 +11,16 @@ const projects = [
     tags: ["Java", "Spring Boot", "Vue.js", "MySQL", "Firestore", "AWS", "Tomcat", "Gradle", "Git"],
     description:
       "음식 및 상품 주문 흐름을 기반으로\n페스티벌, 푸드트럭, 호텔 룸서비스, 테이블오더 등 다양한 채널로 확장할 수 있게 설계한 차세대 주문 플랫폼입니다.\n기획, 설계, API, 관리자 웹, 배포, 운영 대응까지 전반을 수행했습니다.",
-    image: "/assets/img/orderplace-main.png",
-    heroImage: "/assets/img/orderplace-main.png",
+    image: "/portfolio/assets/img/orderplace-main.png",
+    heroImage: "/portfolio/assets/img/orderplace-main.png",
     imageFit: "contain",
     year: "2026",
     duration: "2026",
     role: "Planning · API · Admin Web · Deploy · Operations",
     images: [
-      "/assets/img/orderplace.png",
-      "/assets/img/orderplace2.png",
-      "/assets/img/orderplace3.png",
+      "/portfolio/assets/img/orderplace.png",
+      "/portfolio/assets/img/orderplace2.png",
+      "/portfolio/assets/img/orderplace3.png",
     ],
     overview:
       "오더플레이스는 음식 및 상품 주문을 기반으로 페스티벌, 푸드트럭, 호텔 룸서비스, 테이블오더 등 여러 운영 채널로 확장할 수 있게 설계한 차세대 주문 플랫폼입니다.",
@@ -50,19 +42,19 @@ const projects = [
     tags: ["Java", "Spring Boot", "Vue.js", "MySQL", "Firestore", "AWS", "Tomcat", "Gradle", "Git"],
     description:
       "축구팀 관리, 매칭, 용병 모집과 스포츠 커머스 플랫폼을 함께 기획·구축한 프로젝트입니다.\n앱 개발을 제외한 서비스 전반을 맡아 진행했고,\n풋볼라운지 사용자들이 주문서 작성과 커스텀 유니폼 제작까지 자연스럽게 이어갈 수 있도록 설계했습니다.",
-    image: "/assets/img/footballlounge-main.png",
-    heroImage: "/assets/img/footballlounge-main.png",
+    image: "/portfolio/assets/img/footballlounge-main.png",
+    heroImage: "/portfolio/assets/img/footballlounge-main.png",
     imageFit: "contain",
     year: "2026",
     duration: "2026",
     role: "Planning · API · Commerce · Operations",
     images: [
-      "/assets/img/footballlounge-1.png",
-      "/assets/img/footballlounge-2.png",
-      "/assets/img/footballlounge-3.png",
-      "/assets/img/fblshop-main.png",
-      "/assets/img/fblshop1.png",
-      "/assets/img/fblshop2.png",
+      "/portfolio/assets/img/footballlounge-1.png",
+      "/portfolio/assets/img/footballlounge-2.png",
+      "/portfolio/assets/img/footballlounge-3.png",
+      "/portfolio/assets/img/fblshop-main.png",
+      "/portfolio/assets/img/fblshop1.png",
+      "/portfolio/assets/img/fblshop2.png",
     ],
     overview:
       "풋볼라운지는 축구팀 관리, 매칭, 용병 모집 기능과 풋볼라운지샵 커머스 플랫폼을 함께 기획·구축한 프로젝트입니다. 앱 개발을 제외한 서비스 전반을 맡아 팀 운영과 커스텀 유니폼 주문 흐름을 하나의 경험으로 연결했습니다.",
@@ -84,16 +76,16 @@ const projects = [
     tags: ["Java", "Spring Boot", "Vue.js", "MySQL", "Firestore", "AWS", "Tomcat", "Gradle", "Git", "GPS", "Watch App"],
     description:
       "일반 러닝앱 기능에 캐릭터 보상형 꾸미기 기능을 결합한 운동 리워드 앱입니다.\nGPS 기반 운동 인증을 통해 포인트를 획득하고,\n캐릭터 아이템을 구매·장착하며 워치앱까지 함께 지원하는 구조로 설계했습니다.",
-    image: "/assets/img/runpang-main.png",
-    heroImage: "/assets/img/runpang-main.png",
+    image: "/portfolio/assets/img/runpang-main.png",
+    heroImage: "/portfolio/assets/img/runpang-main.png",
     imageFit: "contain",
     year: "2026",
     duration: "2026",
     role: "Planning · API · Admin Web · Operations",
     images: [
-      "/assets/img/runpang1.png",
-      "/assets/img/runpang2.png",
-      "/assets/img/runpang3.png",
+      "/portfolio/assets/img/runpang1.png",
+      "/portfolio/assets/img/runpang2.png",
+      "/portfolio/assets/img/runpang3.png",
     ],
     overview:
       "런팡은 일반 러닝앱 기능에 캐릭터 보상형 꾸미기 기능을 결합한 운동 리워드 앱입니다. 앱 개발을 제외한 서비스 전반을 맡아 GPS 운동 인증, 포인트, 캐릭터 아이템, 워치앱 연동 흐름을 설계했습니다.",
@@ -115,16 +107,16 @@ const projects = [
     tags: ["Java", "Spring Boot", "Agent API", "POS Integration", "NicePOS", "Okpos", "MetaPOS"],
     description:
       "QR 주문 서비스를 외부 POS 시스템과 연동하는 Agent API 개발 프로젝트입니다.\n나이스포스, 오케이포스, 메타포스 등 매장 POS와 연결해\n고객 주문이 실제 매장 처리 흐름으로 이어지도록 구현했습니다.",
-    image: "/assets/img/ordermate-main.png",
-    heroImage: "/assets/img/ordermate-main.png",
+    image: "/portfolio/assets/img/ordermate-main.png",
+    heroImage: "/portfolio/assets/img/ordermate-main.png",
     imageFit: "contain",
     year: "2024",
     duration: "2024",
     role: "Agent API Developer · POS Integration",
     images: [
-      "/assets/img/ordermate1.png",
-      "/assets/img/ordermate2.png",
-      "/assets/img/ordermate3.png",
+      "/portfolio/assets/img/ordermate1.png",
+      "/portfolio/assets/img/ordermate2.png",
+      "/portfolio/assets/img/ordermate3.png",
     ],
     overview:
       "오더메이트는 QR 주문 서비스를 나이스포스, 오케이포스, 메타포스 등 외부 POS 시스템과 연동하는 Agent API 개발 프로젝트입니다.",
@@ -176,13 +168,13 @@ const projects = [
     tags: ["Java", "Spring Framework", "MVC", "Linux", "Oracle", "jQuery", "JSP", "Maven"],
     description:
       "기업용 웹메일 솔루션 유지보수 및 추가 기능 개발 프로젝트입니다.\n한전, 한수원 등 공기업과 대학교 메일 환경을 지원하며\n고객사별 웹메일 운영, 기능 개선, 기술지원을 수행했습니다.",
-    image: "/assets/img/sensmail.png",
-    heroImage: "/assets/img/sensmail.png",
+    image: "/portfolio/assets/img/sensmail.png",
+    heroImage: "/portfolio/assets/img/sensmail.png",
     year: "2018-2020",
     duration: "2018-2020",
     role: "Maintenance · Feature Development · Technical Support",
     images: [
-      "/assets/img/sensmail.png",
+      "/portfolio/assets/img/sensmail.png",
       "https://images.unsplash.com/photo-1551434678-e076c223a692?w=900&h=600&fit=crop&auto=format",
       "https://images.unsplash.com/photo-1553877522-43269d4ea984?w=900&h=600&fit=crop&auto=format",
     ],
@@ -206,15 +198,15 @@ const projects = [
     tags: ["Java", "eGovFrame", "MVC", "JSP", "jQuery", "JavaScript"],
     description:
       "중소기업유통센터 판판셀러 프로젝트입니다.\n입점사와 관리자가 상품, 주문, 정산, 운영 데이터를 관리할 수 있는\n쇼핑몰 관리자 기능을 구축했습니다.",
-    image: "/assets/img/fanfanseller-main.png",
-    heroImage: "/assets/img/fanfanseller-main.png",
+    image: "/portfolio/assets/img/fanfanseller-main.png",
+    heroImage: "/portfolio/assets/img/fanfanseller-main.png",
     year: "2021",
     duration: "2021",
     role: "MVC Web Developer",
     images: [
-      "/assets/img/fanfanseller-main.png",
-      "/assets/img/fanfanseller1.png",
-      "/assets/img/fanfanseller2.png",
+      "/portfolio/assets/img/fanfanseller-main.png",
+      "/portfolio/assets/img/fanfanseller1.png",
+      "/portfolio/assets/img/fanfanseller2.png",
     ],
     overview:
       "판판셀러는 전자정부 프레임워크 기반 MVC 모델로 구축된 중소기업유통센터 관리자 프로젝트입니다. JSP, jQuery, JavaScript를 활용해 입점사와 운영자가 쇼핑몰 운영 데이터를 관리할 수 있는 기능을 구현했습니다.",
@@ -270,20 +262,20 @@ const skillGroups = [
 ];
 
 const techSkills = [
-  { name: "HTML", image: "/assets/img/html.png" },
-  { name: "Java", image: "/assets/img/java.png" },
-  { name: "JavaScript", image: "/assets/img/javascript.png" },
-  { name: "Vue.js", image: "/assets/img/vuejs.png" },
-  { name: "jQuery", image: "/assets/img/jquery.png" },
-  { name: "Spring Boot", image: "/assets/img/springboot.png" },
-  { name: "MyBatis", image: "/assets/img/mybatis.jpeg" },
-  { name: "MySQL", image: "/assets/img/mysql.png" },
-  { name: "Firestore", image: "/assets/img/firestore.svg" },
-  { name: "AWS", image: "/assets/img/aws.jpeg" },
-  { name: "Linux", image: "/assets/img/linux.png" },
-  { name: "Tomcat", image: "/assets/img/tomcat.png" },
-  { name: "Atlassian", image: "/assets/img/atlassian.jpg" },
-  { name: "Figma", image: "/assets/img/figma.webp" },
+  { name: "HTML", image: "/portfolio/assets/img/html.png" },
+  { name: "Java", image: "/portfolio/assets/img/java.png" },
+  { name: "JavaScript", image: "/portfolio/assets/img/javascript.png" },
+  { name: "Vue.js", image: "/portfolio/assets/img/vuejs.png" },
+  { name: "jQuery", image: "/portfolio/assets/img/jquery.png" },
+  { name: "Spring Boot", image: "/portfolio/assets/img/springboot.png" },
+  { name: "MyBatis", image: "/portfolio/assets/img/mybatis.jpeg" },
+  { name: "MySQL", image: "/portfolio/assets/img/mysql.png" },
+  { name: "Firestore", image: "/portfolio/assets/img/firestore.svg" },
+  { name: "AWS", image: "/portfolio/assets/img/aws.jpeg" },
+  { name: "Linux", image: "/portfolio/assets/img/linux.png" },
+  { name: "Tomcat", image: "/portfolio/assets/img/tomcat.png" },
+  { name: "Atlassian", image: "/portfolio/assets/img/atlassian.jpg" },
+  { name: "Figma", image: "/portfolio/assets/img/figma.webp" },
 ];
 
 const navItems = [
@@ -383,7 +375,7 @@ function ProjectDetail({ project, onBack }: { project: Project; onBack: () => vo
 
       <section className="relative h-[72vh] md:h-[82vh] overflow-hidden bg-muted pt-20">
         <motion.img
-          src={assetPath(project.heroImage)}
+          src={project.heroImage}
           alt={project.title}
           className={`w-full h-full ${
             project.imageFit === "contain" ? "object-contain p-8 md:p-12" : "object-cover"
@@ -484,7 +476,7 @@ function ProjectDetail({ project, onBack }: { project: Project; onBack: () => vo
                 }`}
               >
                 <img
-                  src={assetPath(src)}
+                  src={src}
                   alt={`${project.title} view ${i + 1}`}
                   className={`w-full h-full transition-transform duration-700 group-hover:scale-105 ${
                     project.imageFit === "contain" || src.includes("fblshop")
@@ -834,7 +826,7 @@ function Portfolio({ onProjectClick }: { onProjectClick: (project: Project) => v
                   <div key={skill.name} className="flex flex-col items-center gap-3">
                     <div className="w-20 h-20 rounded-full border border-border bg-card flex items-center justify-center overflow-hidden">
                       <img
-                        src={assetPath(skill.image)}
+                        src={skill.image}
                         alt={skill.name}
                         className="w-11 h-11 object-contain"
                         loading="lazy"
@@ -978,7 +970,7 @@ function Portfolio({ onProjectClick }: { onProjectClick: (project: Project) => v
                 {/* image */}
                 <div className="relative h-64 xl:h-72 overflow-hidden bg-muted">
                   <img
-                    src={assetPath(project.image)}
+                    src={project.image}
                     alt={project.title}
                     className={`w-full h-full transition-transform duration-700 ease-out group-hover:scale-105 ${
                       project.imageFit === "contain" ? "object-contain p-5" : "object-cover"
