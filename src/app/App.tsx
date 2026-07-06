@@ -2,6 +2,14 @@ import { useState, useEffect, useRef } from "react";
 import { motion, useInView, useScroll, useTransform, AnimatePresence } from "motion/react";
 import { ArrowLeft, ArrowUpRight, Calendar, Clock, Mail, Menu, User, X } from "lucide-react";
 
+const assetPath = (path: string) => {
+  if (/^(https?:)?\/\//.test(path) || path.startsWith("data:")) {
+    return path;
+  }
+
+  return `${import.meta.env.BASE_URL}${path.replace(/^\/+/, "")}`;
+};
+
 const projects = [
   {
     id: "01",
@@ -375,7 +383,7 @@ function ProjectDetail({ project, onBack }: { project: Project; onBack: () => vo
 
       <section className="relative h-[72vh] md:h-[82vh] overflow-hidden bg-muted pt-20">
         <motion.img
-          src={project.heroImage}
+          src={assetPath(project.heroImage)}
           alt={project.title}
           className={`w-full h-full ${
             project.imageFit === "contain" ? "object-contain p-8 md:p-12" : "object-cover"
@@ -476,7 +484,7 @@ function ProjectDetail({ project, onBack }: { project: Project; onBack: () => vo
                 }`}
               >
                 <img
-                  src={src}
+                  src={assetPath(src)}
                   alt={`${project.title} view ${i + 1}`}
                   className={`w-full h-full transition-transform duration-700 group-hover:scale-105 ${
                     project.imageFit === "contain" || src.includes("fblshop")
@@ -826,7 +834,7 @@ function Portfolio({ onProjectClick }: { onProjectClick: (project: Project) => v
                   <div key={skill.name} className="flex flex-col items-center gap-3">
                     <div className="w-20 h-20 rounded-full border border-border bg-card flex items-center justify-center overflow-hidden">
                       <img
-                        src={skill.image}
+                        src={assetPath(skill.image)}
                         alt={skill.name}
                         className="w-11 h-11 object-contain"
                         loading="lazy"
@@ -970,7 +978,7 @@ function Portfolio({ onProjectClick }: { onProjectClick: (project: Project) => v
                 {/* image */}
                 <div className="relative h-64 xl:h-72 overflow-hidden bg-muted">
                   <img
-                    src={project.image}
+                    src={assetPath(project.image)}
                     alt={project.title}
                     className={`w-full h-full transition-transform duration-700 ease-out group-hover:scale-105 ${
                       project.imageFit === "contain" ? "object-contain p-5" : "object-cover"
