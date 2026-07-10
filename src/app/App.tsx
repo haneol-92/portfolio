@@ -10,7 +10,7 @@ const projects = [
     category: "호텔·페스티벌·테이블오더·푸드코트 확장형 주문 플랫폼",
     tags: ["Java", "Spring Boot", "Spring Framework", "MyBatis", "Vue3", "Vite", "JSP", "JavaScript", "Aurora", "Firebase", "AWS", "Gradle"],
     description:
-      "일반 배달 중심 서비스였던 오더플레이스를 호텔, 페스티벌, 테이블오더, 푸드코트까지 확장 가능한 주문 플랫폼으로 고도화했습니다.\n멀티 모듈 구조와 공통 상품·주문 도메인을 정리하고, 외부 배달·POS 연동 API와 관리자 기능을 개발했습니다.\n쿼리와 인덱스 최적화를 통해 주요 조회 응답 속도를 30% 이상 개선했습니다.",
+      "호텔·페스티벌·테이블오더·푸드코트 채널 확장\n멀티 모듈 구조 및 공통 상품·주문 도메인 정리\n주요 조회 쿼리·인덱스 최적화로 응답 속도 30%+ 개선",
     image: "/portfolio/assets/img/orderplace-main.png",
     heroImage: "/portfolio/assets/img/orderplace-main.png",
     imageFit: "contain",
@@ -41,7 +41,7 @@ const projects = [
     category: "축구 팀 운영 앱과 유니폼 커머스를 연결한 서비스",
     tags: ["Java", "Spring Boot", "MyBatis", "Aurora", "AWS", "Gradle", "Vue3", "Vite", "REST API", "Commerce"],
     description:
-      "축구 팀 운영 앱의 백엔드 구조, DB 모델, 서버 로직과 주요 API를 설계·개발했습니다.\nAWS 기반 인프라를 구축하고, 풋볼라운지 앱과 유니폼샵의 회원을 공유하는 커스텀 유니폼 웹페이지를 개발했습니다.\n앱과 커머스 간 연동을 통해 팀 운영 서비스의 구매 흐름을 확장했습니다.",
+      "축구 팀 운영 앱 백엔드 구조 및 주요 API 설계\nDB 모델·서버 로직 설계와 AWS 인프라 구축\n앱 회원 공유 기반 커스텀 유니폼 구매 흐름 개발",
     image: "/portfolio/assets/img/footballlounge-main.png",
     heroImage: "/portfolio/assets/img/footballlounge-main.png",
     imageFit: "contain",
@@ -75,7 +75,7 @@ const projects = [
     category: "GPS 러닝 기록과 아바타 리워드를 결합한 운동 플랫폼",
     tags: ["Java", "Spring Boot", "MyBatis", "Aurora", "AWS S3", "Gradle", "Vue3", "Vite", "GPS", "PNG Rendering", "Admin Web"],
     description:
-      "GPS 기반 러닝 기록 저장과 운동 경로 관리 기능을 개발했습니다.\n상점, 인벤토리, 아바타 장착 등 리워드 기반 사용자 기능과 관리자 백오피스를 구현했습니다.\nPNG 기반 2D 캐릭터 프레임 이미지를 레이어별로 조합해 애니메이션 효과를 표현했습니다.",
+      "GPS 기반 러닝 기록 저장 및 운동 경로 관리\n상점·인벤토리·아바타 장착 리워드 기능 개발\nPNG 2D 캐릭터 레이어 조합 기반 애니메이션 구현",
     image: "/portfolio/assets/img/runpang-main.png",
     heroImage: "/portfolio/assets/img/runpang-main.png",
     imageFit: "contain",
@@ -106,7 +106,7 @@ const projects = [
     category: "QR 테이블오더와 외부 POS를 연결하는 연동 에이전트",
     tags: ["Java", "Spring Boot", "REST API", "MySQL", "Firestore", "QR Order", "POS Integration", "Adapter Pattern"],
     description:
-      "QR 테이블오더 주문 데이터를 외부 POS로 전달하기 위한 Java 기반 연동 에이전트입니다.\nPOS 업체별로 다른 주문·연동 방식을 어댑터 구조로 분리해 기존 주문 로직 변경을 최소화했습니다.\n주문 데이터 전달과 처리 상태 연동이 안정적으로 이어지도록 API 흐름을 구성했습니다.",
+      "QR 테이블오더 주문 데이터 외부 POS 전달\nPOS 업체별 연동 차이 어댑터 구조 분리\n기존 주문 로직 변경 최소화와 연동 유지보수성 개선",
     image: "/portfolio/assets/img/ordermate-main.png",
     heroImage: "/portfolio/assets/img/ordermate-main.png",
     imageFit: "contain",
@@ -137,7 +137,7 @@ const projects = [
     category: "뉴스 기사 크롤링과 AI TTS 서버 연동",
     tags: ["Java", "Spring Boot", "Spring Framework", "REST API", "Spring Batch", "MySQL", "MongoDB", "Linux", "Python", "Crawler", "AI TTS"],
     description:
-      "인터넷 뉴스 매체별 기사 구조에 대응하는 크롤링 API를 관리·개발했습니다.\n수집된 뉴스 기사 본문 데이터를 TTS 서버에서 활용할 수 있도록 정제하고 결과물을 추출하는 처리 흐름을 구현했습니다.\n개발과 서버 운영을 함께 담당하며 장애 원인 파악과 대응 효율을 개선했습니다.",
+      "뉴스 매체별 기사 구조 대응 크롤링 API 관리\n기사 본문 데이터 정제 및 AI TTS 서버 연동\n개발·서버 운영 병행으로 장애 대응 효율 개선",
     image: "https://images.unsplash.com/photo-1495020689067-958852a7765e?w=900&h=700&fit=crop&auto=format",
     heroImage: "https://images.unsplash.com/photo-1495020689067-958852a7765e?w=1600&h=900&fit=crop&auto=format",
     year: "2021",
@@ -167,7 +167,7 @@ const projects = [
     category: "기업·공공기관 웹메일 솔루션 기술지원과 기능 개발",
     tags: ["Java", "JSP", "JavaScript", "Spring Framework", "MVC", "MySQL", "Oracle", "Tibero", "Tomcat", "Apache", "Jeus", "Linux"],
     description:
-      "기업 및 공공기관 대상 웹메일 솔루션의 기술지원, 유지보수, 기능 개발을 수행했습니다.\n다양한 WAS와 DB 환경에서 솔루션을 운영하며 고객사별 포털 인증 연동과 커스터마이징을 진행했습니다.\n한국전력, 한국수력원자력, 청소년정책연구원, 덕성여대 등 20여 개 고객사를 지원했습니다.",
+      "기업·공공기관 웹메일 솔루션 기술지원 및 유지보수\n고객사별 포털 인증 연동과 기능 커스터마이징\n한국전력·한국수력원자력 등 20+ 고객사 지원",
     image: "/portfolio/assets/img/sensmail.png",
     heroImage: "/portfolio/assets/img/sensmail.png",
     year: "2018-2021",
@@ -197,7 +197,7 @@ const projects = [
     category: "중소기업유통센터 웹 커머스 플랫폼 고도화",
     tags: ["Java", "JSP", "JavaScript", "eGovFrame", "MVC", "Oracle", "WebTob", "Jeus", "Gradle", "SVN"],
     description:
-      "중소기업유통센터 웹 커머스 플랫폼 판판셀러 개발 프로젝트입니다.\nMVC 기반 관리자 및 사용자 화면과 백엔드 기능을 개발했습니다.\n공공기관 커머스 서비스 운영에 필요한 주요 기능과 Oracle 기반 데이터 처리 흐름을 구현했습니다.",
+      "중소기업유통센터 웹 커머스 플랫폼 고도화\nMVC 기반 관리자·사용자 화면 및 백엔드 개발\nOracle 기반 공공기관 커머스 운영 기능 구현",
     image: "/portfolio/assets/img/fanfanseller-main.png",
     heroImage: "/portfolio/assets/img/fanfanseller-main.png",
     year: "2021-2022",
@@ -227,7 +227,7 @@ const projects = [
     category: "도서판매 홈페이지 결제·본인인증·통계 고도화",
     tags: ["Java", "JSP", "JavaScript", "Spring Framework", "MySQL", "Git", "Maven", "NicePay", "Auth API", "Chart"],
     description:
-      "한국도서출판정보센터 도서판매 홈페이지 고도화 프로젝트입니다.\n나이스페이 결제 모듈, 본인인증 API, 통계 차트 연동 기능을 개발했습니다.\n외부 모듈과 내부 서비스 흐름을 연결하고 운영 데이터를 확인할 수 있는 화면을 구현했습니다.",
+      "도서판매 홈페이지 결제·본인인증·통계 고도화\n나이스페이 결제 모듈 및 본인인증 API 연동\n운영 데이터 확인용 통계 차트 개발",
     image: "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=900&h=700&fit=crop&auto=format",
     heroImage: "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=1600&h=900&fit=crop&auto=format",
     year: "2023",
@@ -255,10 +255,36 @@ const projects = [
 type Project = (typeof projects)[number];
 
 const skillGroups = [
-  { category: "Backend", items: ["Java", "Spring Boot", "JSP / Servlet", "Spring Batch"] },
-  { category: "Frontend", items: ["HTML", "JavaScript", "Vue.js", "jQuery"] },
-  { category: "Database · Infra", items: ["MySQL", "MariaDB", "Oracle", "MongoDB", "AWS", "Linux", "Tomcat", "Nginx", "Apache"] },
-  { category: "Tools · Operations", items: ["Git", "GitLab", "Gradle", "Maven", "API Integration", "Technical Support"] },
+  {
+    category: "Strong",
+    items: [
+      "Java",
+      "Spring Boot",
+      "Spring Framework",
+      "MyBatis",
+      "REST API",
+      "MySQL / Aurora",
+      "AWS",
+      "Linux",
+    ],
+  },
+  {
+    category: "Knowledgeable",
+    items: [
+      "Vue3",
+      "Vite",
+      "JSP",
+      "JavaScript",
+      "Firestore",
+      "MongoDB",
+      "Oracle",
+      "MariaDB",
+      "Tomcat / Apache",
+      "Gradle / Maven",
+      "Git / GitLab",
+      "Technical Support",
+    ],
+  },
 ];
 
 const techSkills = [
@@ -274,8 +300,6 @@ const techSkills = [
   { name: "AWS", image: "/portfolio/assets/img/aws.jpeg" },
   { name: "Linux", image: "/portfolio/assets/img/linux.png" },
   { name: "Tomcat", image: "/portfolio/assets/img/tomcat.png" },
-  { name: "Atlassian", image: "/portfolio/assets/img/atlassian.jpg" },
-  { name: "Figma", image: "/portfolio/assets/img/figma.webp" },
 ];
 
 const navItems = [
@@ -712,7 +736,7 @@ function Portfolio({ onProjectClick }: { onProjectClick: (project: Project) => v
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.6 }}
           >
-            Creative Developer
+            Backend Developer
           </motion.p>
 
           <div className="overflow-hidden">
@@ -733,9 +757,12 @@ function Portfolio({ onProjectClick }: { onProjectClick: (project: Project) => v
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 1.05 }}
           >
-            <p className="text-muted-foreground text-sm leading-relaxed max-w-[320px]">
-              기획부터 프론트엔드, 백엔드, 데이터베이스, 인프라까지 서비스 구현 전반을
-              연결하는 올라운더 개발자입니다.
+            <p className="text-muted-foreground text-sm leading-relaxed max-w-[360px]">
+              Java/Spring 기반 백엔드 개발자
+              <br />
+              주문·커머스·외부 연동 API 중심 12+ 프로젝트
+              <br />
+              조회 성능 30%+ 개선, 20+ 고객사 기술지원
             </p>
 
             <div className="flex gap-4">
@@ -797,21 +824,21 @@ function Portfolio({ onProjectClick }: { onProjectClick: (project: Project) => v
             >
               아이디어를 실제 서비스로 구현합니다.
               <br />
-              기획, 개발, 인프라, 운영까지
+              Java/Spring 기반 API와 운영 구조로
               <br />
-              제품이 완성되는 과정을 직접 설계합니다.
+              주문·커머스 서비스를 만듭니다.
             </p>
           </FadeUp>
 
           <FadeUp delay={0.2} className="md:col-span-6 flex flex-col gap-6">
             <p className="text-muted-foreground leading-relaxed text-sm">
-              저는 아이디어를 실제 서비스로 구현하는 백엔드 기반 프로덕트 빌더입니다.
-              Java, Spring Boot, MySQL, AWS를 활용해 주문 플랫폼, 관리자 시스템, API,
-              인프라 환경을 설계하고 개발해왔습니다.
+              Java, Spring Boot, MyBatis, MySQL/Aurora, AWS 기반의 백엔드 개발자입니다.
+              주문 플랫폼, 관리자 시스템, 외부 연동 API, 운영 인프라 구축 경험을 중심으로
+              서비스를 구현해왔습니다.
             </p>
             <p className="text-muted-foreground leading-relaxed text-sm">
-              기능 구현에만 머무르지 않고, 사용자 흐름, 운영 구조, 확장 가능성까지 함께
-              고려하며 서비스가 실제로 작동하고 성장할 수 있는 형태를 만드는 데 집중합니다.
+              핵심 성과는 주요 조회 응답 속도 30% 이상 개선, 기업·공공기관 20여 개 고객사
+              기술지원, 호텔·페스티벌·테이블오더·푸드코트 주문 채널 확장입니다.
             </p>
 
             <div className="pt-8 border-t border-border mt-2">
@@ -819,7 +846,7 @@ function Portfolio({ onProjectClick }: { onProjectClick: (project: Project) => v
                 className="text-xs uppercase tracking-widest text-primary mb-6"
                 style={{ fontFamily: "var(--font-display)" }}
               >
-                가능한 기술
+                대표 기술
               </h3>
               <div className="grid grid-cols-3 sm:grid-cols-4 gap-4">
                 {techSkills.map((skill) => (
@@ -843,9 +870,9 @@ function Portfolio({ onProjectClick }: { onProjectClick: (project: Project) => v
             <div className="grid grid-cols-3 gap-4 pt-8 border-t border-border mt-2">
               {(
                 [
-                  ["12+", "Projects"],
-                  ["8+", "Experience"],
-                  ["10+", "Clients"],
+                  ["30%+", "Response"],
+                  ["20+", "Clients"],
+                  ["8+", "Years"],
                 ] as [string, string][]
               ).map(([num, label]) => (
                 <div key={label}>
@@ -993,7 +1020,7 @@ function Portfolio({ onProjectClick }: { onProjectClick: (project: Project) => v
                 </div>
 
                 {/* info */}
-                <div className="p-6 flex items-start justify-between border-b border-border min-h-[260px]">
+                <div className="p-6 flex items-start justify-between border-b border-border min-h-[330px]">
                   <div className="flex-1">
                     <div className="flex items-center gap-4 mb-4">
                       <span className="text-xs font-mono text-primary">{project.id}</span>
@@ -1008,7 +1035,17 @@ function Portfolio({ onProjectClick }: { onProjectClick: (project: Project) => v
                     <p className="text-xs text-muted-foreground uppercase tracking-wider mb-4">
                       {project.category}
                     </p>
-                    <p className="text-sm text-muted-foreground leading-relaxed max-w-xl whitespace-pre-line line-clamp-6">
+                    <div className="space-y-1.5 mb-4 text-[11px] text-muted-foreground">
+                      <div className="flex gap-2">
+                        <span className="min-w-10 text-primary font-mono uppercase">Period</span>
+                        <span>{project.duration}</span>
+                      </div>
+                      <div className="flex gap-2">
+                        <span className="min-w-10 text-primary font-mono uppercase">Role</span>
+                        <span>{project.role}</span>
+                      </div>
+                    </div>
+                    <p className="text-sm text-muted-foreground leading-relaxed max-w-xl whitespace-pre-line line-clamp-5">
                       {project.description}
                     </p>
                   </div>
@@ -1029,7 +1066,7 @@ function Portfolio({ onProjectClick }: { onProjectClick: (project: Project) => v
           <SectionLabel index="04" label="Capabilities" />
         </FadeUp>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 divide-x divide-border border border-border">
+        <div className="grid grid-cols-1 md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-border border border-border">
           {skillGroups.map((group, i) => (
             <FadeUp key={group.category} delay={i * 0.1} className="p-8 md:p-10">
               <h3 className="text-xs uppercase tracking-widest text-primary mb-8 font-mono">
